@@ -6,19 +6,12 @@ For now.
 
 Finished Game URL here: insert it when ready
 
-Gamemap.
+Upcoming features.
 Three players total.
 
-Two players indirectly facing off against each other.
-Third player executes whatever the winning player does.
+PLAYER 1 and PLAYER 2 make a TRAIL as they move. They each try to capture the SIGNS randomly appearing on GAMEMAP. If they grab a SIGN, their TRAIL decreases in length.
 
-There is a wooden board. On one side, it reads "Duck season", and on the other side, it reads "Rabbit season".
-The Duck player needs to flip the board to say "Rabbit season".
-The Rabbit player needs to flip the board to say "Duck season".
-
-The third player is the hunter. The hunter moves towards the other two players, who are at the board. When the hunter arrives, he shoots the player that the sign is pointing to.
+PLAYER 3 tries to catch either PLAYER 1 or PLAYER 2. Future plans to be announced.
 
 Win/Lose conditions:
-If the board says "Rabbit season" when the hunter arrives, the Duck player WINS.
-If the board says "Duck season" when the hunter arrives, the Rabbit player WINS.
-
+TBA
