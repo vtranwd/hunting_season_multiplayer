@@ -6,14 +6,24 @@ var board;
 var context;
 
 
-// player head
+// player1 head
 var player1X = blockSize * 5;
 var player1Y = blockSize * 5;
-// player movement
+// player1 movement
 var velocityX = 0;
 var velocityY = 0;
 
 var player1Trail = []; // trail behind character
+
+// player3 head
+var player3X = blockSize * 5;
+var player3Y = blockSize * 5;
+// player3 movement
+var velocityX = 0;
+var velocityY = 0;
+
+var player3vision = []; // player 3 vision radius
+
 
 // signage
 var signageX;
@@ -38,10 +48,10 @@ function update() {
         return;
     }
 
-    context.fillStyle = "green";
+    context.fillStyle = '#a3ff86';
     context.fillRect(0, 0, board.width, board.height);
 
-    context.fillStyle="orange";
+    context.fillStyle='#dea000';
     context.fillRect(signageX, signageY, blockSize, blockSize);
 
     if (player1X == signageX && player1Y == signageY) {
@@ -56,7 +66,7 @@ function update() {
         player1Trail[0] = [player1X, player1Y];
     }
 
-    context.fillStyle="silver";
+    context.fillStyle='#bababa';
     player1X += velocityX * blockSize;
     player1Y += velocityY * blockSize;
     context.fillRect(player1X, player1Y, blockSize, blockSize);
@@ -68,7 +78,7 @@ function update() {
     if (player1X < 0 || player1X > cols * blockSize || player1Y < 0 || player1Y > rows *blockSize) {
         gameOver = true;
         alert("Game Over");
-    }
+    } // player out of bounds
 
 }
 
